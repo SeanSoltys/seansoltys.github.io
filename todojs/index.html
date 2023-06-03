@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+    <title>Give Me Donuts</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  </head>
+  <body>
+    
+    <!-- any way to get rid of the white border in the picture i use for the button? -->
+        <button id="addSequenceOf1">
+        <img src="cat.png" alt="donutcat" style="width: 250px; height: 250px" />
+        </button>
+    
+    
+        <!-- i cant get rid of this 1 in preview -->
+    <div id="plus">1</div> 
+    <div id="sequenceValue">0</div>
+<!-- i cant center the "sequenceValue"...i tried align -->
+
+    <button id="autoclicker1">Level One</button>
+    <button id="autoclicker2">Level Two</button>
+    <button id="autoclicker3">Level Three</button> 
+    
+    
+<!-- when I put this code in JS it doesn't work \/ -->
+
+    <script>
+        addValue = 0;
+        $("#addSequenceOf1").click(function () {
+          var actualValue = parseInt($("#plus").html());
+          addValue = addValue + actualValue;
+          $("#sequenceValue").html(addValue);}
+        );
+        </script>
+        
+            <script>
+              const element = document.getElementById("plus");
+              setInterval(function () {
+                element.innerHTML += "";
+              }, 1000);
+            </script>
+
+
+
+  </body>
+</html>
