@@ -1,5 +1,5 @@
 * {
-  margin: 20px;
+  margin: 0px;
   padding: 0px;
   list-style: none;
   text-decoration: none;
@@ -37,10 +37,11 @@ nav {
   column-gap: 50px;
 }
 #aboutme img {
-  border-radius: 35rem;
+  border-radius: 350px;
   width: 200px;
-  height: 250px;
+  height: 280px;
   display: flex;
+  padding: 20px;
 }
 #aboutme p {
   font-size: 30px;
@@ -66,5 +67,7 @@ nav {
 footer {
   background-color: #000000;
   color: #fffefe;
-  text-align: center;
+  text-align:center;
+  min-width: fit-content;
+  max-width: fit-content;
 }
